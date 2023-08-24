@@ -1,4 +1,4 @@
-import RecordButton from '../components/buttons/RecordButton';
+import Navi2Record from '../components/buttons/Navi2Record';
 
 function Home() {
 	return (
@@ -7,7 +7,7 @@ function Home() {
 				Record Cat's Voice
 			</p>
 
-			<RecordButton />
+			<Navi2Record />
 		</div>
 	);
 }

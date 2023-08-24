@@ -1,14 +1,9 @@
-import { useNavigate } from 'react-router-dom';
-function RecordButton() {
-	const navigate = useNavigate();
-	const handleRecordClick = () => {
-		navigate('/record');
+function RecordButton({ recording, startRecording, stopRecording }) {
+	if (recording) {
+		return <button onClick={stopRecording}>Stop Recording</button>;
+	} else {
+		return <button onClick={startRecording}>Start Recording</button>;
 	}
-	return(
-		<button className="standard-button" onClick={handleRecordClick}>
-			Record!!
-		</button>
-	);
 }
 
 export default RecordButton;
